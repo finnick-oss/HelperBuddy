@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDashboard"
+    android:background="#fff">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayoutMiddle"
+        android:background="#fff"
+            android:layout_above="@+id/relLayoutBotBar">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/profile_foreground"
+
+                    />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nishant Yadav"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_below="@id/profile_image"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/profile_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nishant Yadav"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@id/profile_name"
+            android:layout_centerHorizontal="true"
+            />
+
+       <ImageView
+           android:id="@+id/profile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/uidesign"
+           android:layout_marginTop="-30dp"
+           android:layout_below="@id/profile_occupation"
+           />
+        <LinearLayout
+            android:id="@+id/profile_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/bottom_nav_profile_icon"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nishant Yadav"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999999999"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/password"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/bottom_nav_dashboard_icon"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Help"
+                android:textColor="#000"
+
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_below="@id/profile_linear4"
+
+
+         android:layout_marginLeft="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/loginbackground"
+            android:fontFamily="@font/abeezee"
+            android:text="Logout"
+            android:textColor="#FFF"
+            android:layout_marginStart="50dp" />
+
+
+
+
+
+        </RelativeLayout>/>
+</ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutBotBar"
+            android:layout_alignParentBottom="true"
+            >
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_bar"
+                app:labelVisibilityMode="labeled"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:menu="@menu/bottom_navigation_menu"
+                android:background="#fff"
+
+                app:itemIconTint="@drawable/selector"
+
+                android:elevation="8dp"
+                app:itemTextColor="@drawable/selector"
+
+                >
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+

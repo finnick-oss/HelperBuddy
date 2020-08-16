@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.helperbuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="Intent.ACTION_OPEN_DOCUMENT " />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACTION_OPEN_DOCUMENT" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/helper_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/helper_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".Phoneno" />
+        <activity
+            android:name=".VerificationWorkerActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".HelpThem"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".VerifyOTPLogin"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".VerificationVisitorActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Search"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".FullDetails" />
+        <activity android:name=".WorkerSigup" />
+        <activity android:name=".Details" />
+        <activity android:name=".UserType" />
+        <activity
+            android:name=".MainDashboard"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".UserProfile" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

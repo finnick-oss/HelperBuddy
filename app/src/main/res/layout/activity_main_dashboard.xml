@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relLayoutTopBar1"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/search_field"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/search_btn"
+            android:layout_toLeftOf="@+id/search_btn"
+            android:background="@drawable/search_layout"
+            android:ems="10"
+            android:fontFamily="@font/nunito_semibold"
+            android:hint="Search here"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/search_field"
+            android:layout_alignBottom="@+id/search_field"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="@mipmap/search_button"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutTopBar"
+            android:layout_below="@+id/relLayoutTopBar1">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabs"
+                    >
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Home"></com.google.android.material.tabs.TabItem>
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"></com.google.android.material.tabs.TabItem>
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayoutMiddle"
+            android:layout_below="@+id/relLayoutTopBar"
+            android:layout_above="@+id/relLayoutBotBar">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/container">
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutBotBar"
+            android:layout_alignParentBottom="true"
+          >
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_bar"
+                app:labelVisibilityMode="labeled"
+                android:layout_width="match_parent"
+                android:background="?android:attr/windowBackground"
+                android:layout_height="match_parent"
+                app:menu="@menu/bottom_navigation_menu"
+
+                app:itemIconTint="@drawable/selector"
+
+                android:elevation="8dp"
+                app:itemTextColor="@drawable/selector"
+
+                >
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
