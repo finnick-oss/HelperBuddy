@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#836CBA</item>
+        <item name="colorPrimaryDark">#d9cef5</item>
+        <item name="colorAccent">#836CBA</item>
+
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+    <style name="AppTheme1" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#73DDED</item>
+        <item name="colorPrimaryDark">#73DDED</item>
+        <item name="colorAccent">#d9cef5</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#836CBA</item>
+        <item name="colorPrimaryDark">#FFF</item>
+        <item name="colorAccent">#836CBA</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@style/TextAppearance.AppCompat.Medium">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ExpandedAppbar" parent="@style/TextAppearance.Compat.Notification.Title">
+        <!-- Customize your theme here. -->
+        <item name="textColor">#d9cef5</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="bottomTheme" parent="Theme.Design.BottomSheetDialog"/>
+    <style name="bottomStyle"  parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

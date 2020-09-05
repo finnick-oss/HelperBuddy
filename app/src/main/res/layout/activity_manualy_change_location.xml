@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDashboard"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        app:layout_anchor="@+id/relLayout"
+        app:layout_anchorGravity="center">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add Location Manually"
+                        app:counterMaxLength="15">
+                        <EditText
+                            android:id="@+id/LocationManually"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16dp"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Or"
+                    android:padding="15dp"
+                    android:textSize="19dp"
+                    android:layout_gravity="center"
+                    />
+
+
+                    <TextView
+                        android:id="@+id/CurrentLocation"
+                        android:text="Current Location"
+                        android:background="@drawable/bordercolour"
+                        android:padding="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="16dp"
+                        />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "229893042337",
+    "firebase_url": "https://helperbuddy-99db6.firebaseio.com",
+    "project_id": "helperbuddy-99db6",
+    "storage_bucket": "helperbuddy-99db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229893042337:android:2601a205030c68cb2f40e0",
+        "android_client_info": {
+          "package_name": "com.example.helperbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229893042337-h5jpjmssbnn43lda6u94hlameb9lahjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyTfAci0L_jFHH4eVaKC77s5HV1KHRhdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229893042337-h5jpjmssbnn43lda6u94hlameb9lahjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

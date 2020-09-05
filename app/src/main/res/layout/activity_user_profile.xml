@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDashboard"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relLayoutMiddle"
+
+        android:layout_above="@+id/relLayoutBotBar"
+            android:background="#fff"
+           >
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profile_update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE PROFILE"
+            android:layout_below="@id/relative"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nishant Yadav"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_below="@id/profile_update_text"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/profile_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nishant Yadav"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:layout_below="@id/profile_name"
+            android:layout_centerHorizontal="true"
+            />
+
+       <ImageView
+           android:id="@+id/profile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/uidesign"
+
+           android:layout_marginTop="-30dp"
+           android:layout_below="@id/profile_occupation"
+           />
+
+        <LinearLayout
+            android:id="@+id/profile_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/bottom_nav_profile_icon"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nishant Yadav"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999999999"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear2"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/password"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="********"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profile_linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:layout_below="@id/profile_linear3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/bottom_nav_dashboard_icon"
+                android:layout_marginLeft="100dp"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Help"
+                android:textColor="#000"
+
+                android:textSize="17dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_below="@id/profile_linear4"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/loginbackground"
+            android:fontFamily="@font/abeezee"
+            android:text="Logout"
+            android:textColor="#FFF"
+            />
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/search_layout"
+        android:visibility="visible"
+        app:elevation="2dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_insetEdge="bottom"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="-49dp"
+
+        android:backgroundTint="#FFF"
+        android:foreground="@drawable/blind"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery"
+        app:borderWidth="3dp"
+        app:layout_anchor="@+id/bottomNavView_bar"
+        app:layout_anchorGravity="top|center"
+        app:rippleColor="#ECDADA" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

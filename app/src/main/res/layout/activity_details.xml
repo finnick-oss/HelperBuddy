@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    >
+
+    <RelativeLayout
+
+        android:id="@+id/reltivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        >
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+
+        android:background="@drawable/search_shape"
+
+        android:visibility="visible"
+        app:cardCornerRadius="20dp"
+        app:mt_maxSuggestionsCount="5"
+        app:mt_menuIconDrawable="@mipmap/search_button"
+        app:mt_speechMode="false" />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/reltive2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/reltivel"
+        android:background="@drawable/background"
+        >
+    </RelativeLayout>
+    <Spinner
+        android:layout_below="@+id/reltive2"
+        android:layout_marginLeft="200dp"
+        android:id="@+id/aSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:entries="@array/Spinner_items"
+        android:layout_marginStart="200dp" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aSpinner"
+      >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

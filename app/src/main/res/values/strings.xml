@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HelperBuddy</string>
+    <string name="locationText"><u>Set Location Manually</u></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="Spinner_items">
+        <item id="1"> Within 1 Km  </item>
+        <item id="5">  Within 5 Km  </item>
+        <item id="20"> Within 20 Km </item>
+        <item id="50"> Within 50 Km </item>
+        <item id="1000">More Than 100km </item>
+    </string-array>
+</resources>

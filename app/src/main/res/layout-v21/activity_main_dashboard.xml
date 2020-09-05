@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".FullDetails"
+    tools:visibility="visible">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:expandedTitleTextAppearance="@style/ThemeOverlay.AppCompat.Dark"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:id="@+id/permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_baseline_location_on_24"
+                    app:tint="#003153"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginLeft="-3dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:padding="5dp"
+                    android:text="Rohini"
+                    android:textColor="#003153"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_baseline_expand_more_24"
+                    app:tint="#003153"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/relLayoutTopBar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/relLayou"
+                    android:background="@drawable/background"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/permissions"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+
+                        android:background="@drawable/search_shape"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ic_baseline_search_24"
+                            app:tint="#003153"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/search_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+
+                            android:layout_marginRight="30dp"
+
+
+                            android:ems="10"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:hint="Search By Occupation Or Name "
+                            android:inputType="textPersonName"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="#999999"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayoutTopBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/relLayoutTopBar1">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/baloo_bhai"
+                                android:text="Home">
+
+                            </com.google.android.material.tabs.TabItem>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/baloo_bhai"
+                                android:text="History">
+
+                            </com.google.android.material.tabs.TabItem>
+
+
+                        </com.google.android.material.tabs.TabLayout>
+
+                    </com.google.android.material.appbar.AppBarLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relLayoutMiddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_below="@+id/relLayoutTopBar">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:paddingBottom="58dp">
+
+
+                    </androidx.viewpager.widget.ViewPager>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/search_layout"
+        android:visibility="visible"
+        app:elevation="2dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_insetEdge="bottom"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="-49dp"
+
+        android:backgroundTint="#FFF"
+        android:foreground="@drawable/blind"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/gallery"
+        app:borderWidth="3dp"
+        app:layout_anchor="@+id/bottomNavView_bar"
+        app:layout_anchorGravity="top|center"
+        app:rippleColor="#ECDADA" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

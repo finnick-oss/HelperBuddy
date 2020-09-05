@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorGrey">#c3c3c3 </color>
+
+    <color name="backgroundligntPurple">#d9cef5</color>
+    <color name="event">#836cba</color>
+
+
+    <color name="background_round">#F2F2F2</color>
+
+</resources>

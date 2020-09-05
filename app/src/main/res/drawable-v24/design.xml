@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText"
+    android:layout_height="4dp"
+
+    >
+
+
+
+    <gradient
+
+        android:gradientRadius="100dp"
+        android:startColor="#836CBA"
+        android:endColor="#d9cef5"
+        android:type="linear"/>
+    <corners
+        android:bottomLeftRadius="190dp"
+        android:bottomRightRadius="190dp"
+        />
+
+
+</shape>
